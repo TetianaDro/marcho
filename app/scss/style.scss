@@ -701,13 +701,10 @@
     width: 100%;
     cursor: pointer;
   }
-  &__error {
-    margin-top: 12px;
-    color: $accent;
-    display: inline-block;
+  &__text {
+    margin-bottom: 25px;
   }
 }
-
 
 
 
