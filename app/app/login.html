@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/index.min.css">
+  <link rel="stylesheet" href="css/login.min.css">
 </head>
 
 <body>
-  
+
   <header class="header">
   <div class="container">
     <div class="header__inner">
@@ -59,23 +59,56 @@
 </header>
 
   <main class="main">
-    
-    
 
-    
+    <section class="top">
+      <div class="top__container" style="background-image: url('images/top-bg.jpg');">
+        <div class="container">
+          <h2 class="title top__title">Log in</h2>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">
+                  Log in
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    
-
-    
-
-    
-
-    
-
-    
+    <section class="modal">
+      <div class="container">
+        <div class="modal__links">
+          <a class="modal__link" href="#">Register</a>
+          <a class="modal__link modal__link--active" href="#">Login</a>
+        </div>
+        <form class="modal__form" action="#">
+          <label class="modal__label">
+            Usearname or email address*
+            <input class="modal__input" type="text" required>
+          </label>
+          <label class="modal__label">
+            Password*
+            <input class="modal__input" type="password" required>
+          </label>
+          <label class="modal__label">
+            <input type="checkbox">
+            Remember me
+          </label>
+          <button class="modal__btn" type="submit">Log In</button>
+          <a class="modal__error" href="#">Lost your password?</a>
+        </form>
+      </div>
+    </section>   
     
   </main>
-
+  
   <footer class="footer">
   <div class="container">
     <div class="footer-top">
@@ -145,7 +178,7 @@
         </ul>
       </div>
       <div class="footer-top__item footer-top__nav">
-        <h6 class="footer-top__title footer-top__title-list">Useful Links</h6>
+        <h6 class="footer-top__title">Useful Links</h6>
         <ul class="footer-top__list">
           <li class="footer-top__item">
             <a class="footer-top__link" href="#">About Us</a>
@@ -165,7 +198,7 @@
         </ul>
       </div>
       <div class="footer-top__item footer-top__nav">
-        <h6 class="footer-top__title footer-top__title-list">My Account</h6>
+        <h6 class="footer-top__title">My Account</h6>
         <ul class="footer-top__list">
           <li class="footer-top__item">
             <a class="footer-top__link" href="#">My Account</a>

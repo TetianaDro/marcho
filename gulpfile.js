@@ -66,7 +66,7 @@ function scripts() {
 
 
 function styles() {
-    return src('app/**/*.scss')
+    return src('app/scss/*.scss')
     .pipe(scss({outputStyle: 'compressed'}))
     // .pipe(concat())
     .pipe(rename({
@@ -91,7 +91,7 @@ function build() {
 }
 
 function watching() {
-    watch(['app/scss/**/*.scss'], styles);
+    watch(['app/**/*.scss'], styles);
     watch(['app/*.njk'], nunjucks);
     watch(['app/js/main.js','!app/js/main.min.js'], scripts);
     watch(['app/**/*.html']).on('change', browserSync.reload)
